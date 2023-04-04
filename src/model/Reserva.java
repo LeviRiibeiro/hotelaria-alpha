@@ -39,7 +39,7 @@ public class Reserva {
 
 
     public long duracao(){
-        long diff = checkOut.getTime() - checkIn.getTime();
+        long diff = checkIn.getTime() - checkOut.getTime();
         return TimeUnit.DAYS.convert(diff, TimeUnit.MICROSECONDS);
     }
 
@@ -56,8 +56,9 @@ public class Reserva {
                 + sdf.format(checkIn)
                 + ", check-out: "
                 + sdf.format(checkOut)
+                + ", "
                 + duracao()
-                + "noites";
+                + " noites";
     }
 
 
