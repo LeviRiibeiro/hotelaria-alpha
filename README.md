@@ -1,4 +1,4 @@
 # hotelaria-alpha
 
 
-teste git
+Esse repositorio é referente a um mini projeto academico.
